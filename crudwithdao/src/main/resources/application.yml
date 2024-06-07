@@ -1,0 +1,31 @@
+server:
+  port: 8081
+
+spring:
+  data:
+    web:
+      pageable:
+        default-pageSize: 10
+        max-pageSize: 10
+        page-parameter: pageNo
+        size-parameter: pageSize
+
+
+  application:
+    name: crudwithdao
+
+  datasource:
+    username:
+    password:
+    driver-class-name:
+    url:
+
+  jpa:
+    properties:
+      hibernate:
+      dealect: MySQLDialect
+
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
